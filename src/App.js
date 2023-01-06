@@ -17,17 +17,7 @@ function App() {
   };
 
   return (
-    // <React.Fragment>
-    //   <Cart />
-    //   <Header />
-    //   <main>
-    //     <Meals />
-    //   </main>
-    // </React.Fragment>
-
     <React.Fragment>
-      {/* <Cart onClickOpen={showCartHandler} onClickClose={closeCartHandler}/> */}
-      {/* {<Cart onShowCart={showCartHandler} onClickClose={hideCartHandler}/> && cartIsShown} */}
       {cartIsShown && <Cart onClose={hideCartHandler}/>}
       <Header onShowCart={showCartHandler}/>
       <main>

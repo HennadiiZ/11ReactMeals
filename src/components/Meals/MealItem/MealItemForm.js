@@ -5,11 +5,7 @@ import Input from '../../UI/Input';
 const MealItemForm = (props) => {
   return (
     <form className={`${classes.form}`}>
-      {/* <input /> */}
-      {/* <Input id={'input'} label={'Search'} /> */}
-      {/* <Input input={{id: 'input', label:'Search'}} /> */}
       <Input label='Amount'
-        
         input={{
           id: 'amount_' + props.id,
           type: 'number', 
