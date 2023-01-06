@@ -1,6 +1,5 @@
 import classes from './MealItem.module.css';
 import React from 'react';
-import Card from '../../UI/Card';
 import  MealItemForm from '../MealItem/MealItemForm';
 
 const MealItem = props => {
