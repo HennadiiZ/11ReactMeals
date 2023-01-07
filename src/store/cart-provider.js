@@ -10,21 +10,22 @@ const cartReducer = (state, action) => {
   if (action.type === 'ADD') {
     const updatedItems = state.items.concat(action.item);
     const updatedTotalAmount = state.totalAmount + action.item.price * action.item.amount;
-    
+
     return {
       items: updatedItems,
       totalAmount: updatedTotalAmount
     }
 
-  } else if (action.type === 'REMOVE') {
-    // defaultCartState.items.remove(action.id);
-  }
+  } 
+  // else if (action.type === 'REMOVE') {
+  //   // defaultCartState.items.remove(action.id);
+  // }
   return defaultCartState;
 };
 
 const CartProvider = props => {
 
-  const [cartState, dispatchCartAction] = useReduser(cartReducer, defaultCartState);
+  const [cartState, dispatchCartAction] = useReduser(cartReducer, defaultCartState);  // ????
 
   const addItemToCartHandler = item => {
     dispatchCartAction({type: 'ADD', item: item});
